@@ -1,4 +1,3 @@
-
 ( function _Path_test_s_() {
 
 'use strict';
@@ -11,7 +10,7 @@ if( typeof module !== 'undefined' )
   _.include( 'wTesting' );
   _.include( 'wStringer' );
 
-  require( '../../amid/l4/Path.s' );
+  require( '../../abase/l4/Include.s' );
   
 }
 

@@ -1,14 +1,13 @@
 //#! /usr/bin/env node
-(function _wToolsLayer0_s_(){
+(function _Include_s_(){
 
 'use strict';
 
 if( typeof module !== 'undefined' && module !== null )
 {
+  let _ = require( '../../Tools.s' );
 
-  require( './PathBasic.s' );
-  require( './PathsBasic.s' );
-
+  _.include( 'wPathBasic' );
 }
 
 let _global = _global_;

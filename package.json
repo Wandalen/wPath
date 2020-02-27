@@ -1,19 +1,40 @@
 {
-  "name" : "wpath", 
-  "version" : "0.3.4", 
-  "description" : "Module that aggregates tools for managing paths. `wPath` leverages parsing, joining, extracting, normalizing, nativizing, resolving paths... Use the module to get uniform experience from playing with paths on different platforms.", 
-  "author" : "Kostiantyn Wandalen <wanalen@willbe.so>", 
-  "license" : "MIT", 
-  "main" : "proto/dwtools/amid/___", 
-  "files" : [ "proto/dwtools/amid", "proto/dwtools/Tools.s" ], 
-  "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" }, 
-  "repository" : { "type" : "git", "url" : "https ://github.com/Wandalen/wPath.git" }, 
-  "bugs" : 
-  {
-    "url" : "https ://github.com/Wandalen/wPath/issues"
-  }, 
-  "dependencies" : { "wTools" : "alpha" }, 
-  "devDependencies" : { "wTesting" : "alpha" }, 
-  "keywords" : [ "wTools" ]
+  "name": "wpath",
+  "version": "0.3.4",
+  "description": "Module that aggregates tools for managing paths. `wPath` leverages parsing, joining, extracting, normalizing, nativizing, resolving paths... Use the module to get uniform experience from playing with paths on different platforms.",
+  "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "license": "MIT",
+  "main": "proto/dwtools/abase/Include.s",
+  "files": [
+    "proto/dwtools/abase",
+    "proto/dwtools/Tools.s"
+  ],
+  "scripts": {
+    "test": "wtest .run proto",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https ://github.com/Wandalen/wPath.git"
+  },
+  "bugs": {
+    "url": "https ://github.com/Wandalen/wPath/issues"
+  },
+  "dependencies": {
+    "wTools": "alpha",
+    "wpathbasic": "alpha"
+  },
+  "devDependencies": {
+    "wTesting": "alpha",
+    "wpath": "file:."
+  },
+  "keywords": [
+    "wTools",
+    "wPath",
+    "path",
+    "url",
+    "uri",
+    "path",
+    "file"
+  ]
 }
->>>>>>> e5af5ec41b7e508e4624ff9d4d4367b3ce0e1956
