@@ -54,7 +54,7 @@ path :
       content : prime
 
   entry.proto.no.tests :
-    path : proto/dwtools/amid/l4
+    path : proto/dwtools/abase/l4/Include.s
     criterion :
       tests : 'no.tests'
   entry.proto.only.tests :
@@ -63,7 +63,7 @@ path :
       tests : 'only.tests'
 
   entry.out.raw.debug :
-    path : '{path::out.*=1}/source/dwtools/amid/l4'
+    path : '{path::out.*=1}/source/dwtools/abase/l4'
     criterion :
       debug : [ debug, release ]
       raw : raw
