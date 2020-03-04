@@ -63,7 +63,7 @@ path :
       tests : 'only.tests'
 
   entry.out.raw.debug :
-    path : '{path::out.*=1}/source/dwtools/abase/l4'
+    path : '{path::out.*=1}/source/dwtools/abase/l4/Include.s'
     criterion :
       debug : [ debug, release ]
       raw : raw
