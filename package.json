@@ -1,6 +1,6 @@
 {
   "name" : "wpath", 
-  "version" : "0.3.18", 
+  "version" : "0.3.19", 
   "description" : "Module that aggregates tools for managing paths. `wPath` leverages parsing, joining, extracting, normalizing, nativizing, resolving paths... Use the module to get uniform experience from playing with paths on different platforms.", 
   "author" : "Kostiantyn Wandalen <wanalen@willbe.so>", 
   "license" : "MIT", 
