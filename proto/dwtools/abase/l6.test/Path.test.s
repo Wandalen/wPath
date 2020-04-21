@@ -10,8 +10,8 @@ if( typeof module !== 'undefined' )
   _.include( 'wTesting' );
   _.include( 'wStringer' );
 
-  require( '../../abase/l4/Include.s' );
-  
+  require( '../../abase/l6/Include.s' );
+
 }
 
 var _global = _global_;
@@ -21,7 +21,7 @@ var _ = _global_.wTools;
 // tests
 // --
 
-function routinesOfPathBasic( test ) 
+function routinesOfPathBasic( test )
 {
   test.case = 'namespace _.path';
   test.is( _.routineIs( _.path.like ) );
@@ -63,6 +63,19 @@ function routinesOfPathBasic( test )
   test.is( _.routineIs( _.path.s.areNormalized ) );
 }
 
+//
+
+function routinesOfPathTools( test )
+{
+  test.case = 'routines from PathTools.s';
+  test.is( _.routineIs( _.path.mapExtend ) );
+  test.is( _.routineIs( _.path.mapSupplement ) );
+  test.is( _.routineIs( _.path.mapAppend ) );
+  test.is( _.routineIs( _.path.mapPrepend ) );
+  test.is( _.routineIs( _.path.mapsPair ) );
+  test.is( _.routineIs( _.path.simplify ) );
+  test.is( _.routineIs( _.path.simplifyDst ) );
+}
 
 // --
 // declare
@@ -71,13 +84,14 @@ function routinesOfPathBasic( test )
 var Self =
 {
 
-  name : 'Tools.base.l4.path',
+  name : 'Tools.base.l6.path',
   silencing : 1,
 
   tests :
   {
 
     routinesOfPathBasic,
+    routinesOfPathTools,
 
   },
 
