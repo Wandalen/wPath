@@ -10,7 +10,7 @@ if( typeof module !== 'undefined' )
   _.include( 'wTesting' );
   _.include( 'wStringer' );
 
-  require( '../../abase/l6/Include.s' );
+  require( '../../abase/l6/Path.s' );
 
 }
 
