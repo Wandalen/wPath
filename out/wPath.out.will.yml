@@ -2,32 +2,29 @@ format: outwillfile-2.0
 root:
   - wPath.out
 consistency:
-  wPath.out.will.yml: &ref_0
-    hash: f9b027e9dc7bd934965d7125d95990c3
-    size: 38331
-  ../.ex.will.yml: &ref_1
-    hash: 4db967bd98f9d4a3fcaf9cd7092b70bf
-    size: 1911
-  ../.im.will.yml: &ref_2
-    hash: e25c281cd0d3880e162a565c803435a5
-    size: 4862
+  ../.ex.will.yml: &ref_0
+    hash: 7f0a6fc08fb9f64deb9a7c885a32163c
+    size: 1936
+  ../.im.will.yml: &ref_1
+    hash: 9da05e1797fa1c39be988cfda99f9500
+    size: 4934
 module:
   wPath.out:
     about:
       name: wPath
       org: noorg
       description: >-
-        Module that aggregates tools for managing paths. `wPath` leverages
-        parsing, joining, extracting, normalizing, nativizing, resolving
-        paths... Use the module to get uniform experience from playing with
-        paths on different platforms.
+        Tools to manipulate path. Aggregates modules PathBasic and PathTools.
+        Module Path leverages parsing, joining, extracting, normalizing,
+        nativizing, resolving paths... Use the module to get uniform experience
+        from playing with paths on different platforms.
       enabled: 1
       version: 0.4.0
-      interpreters:
+      interpreters: &ref_2
         - njs >= 8.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
+      keywords: &ref_3
         - wTools
         - wPath
         - path
@@ -37,10 +34,10 @@ module:
         - file
       license: MIT
       author: Kostiantyn Wandalen <wanalen@willbe.so>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@willbe.so>
       npm.name: wpath
-      npm.scripts:
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -118,7 +115,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/dwtools/abase/l4/Include.s
+        path: ../proto/dwtools/abase/l6/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -128,13 +125,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/abase/l4/Include.s'
+        path: '{path::out.*=1}/source/dwtools/abase/l6/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/abase/l4/Include.s'
+        path: '{path::out.*=1}/source/dwtools/abase/l6/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -163,12 +160,12 @@ module:
           - ../proto/dwtools
           - ../proto/dwtools/Tools.s
           - ../proto/dwtools/abase
-          - ../proto/dwtools/abase/l4
-          - ../proto/dwtools/abase/l4/Include.s
-          - ../proto/dwtools/abase/l4.test
-          - ../proto/dwtools/abase/l4.test/Path.test.s
-          - ../proto/dwtools/amid
-          - ../proto/dwtools/atop
+          - ../proto/dwtools/abase/l6
+          - ../proto/dwtools/abase/l6/Include.s
+          - ../proto/dwtools/abase/l6.test
+          - ../proto/dwtools/abase/l6.test/.Path.test.s.swo
+          - ../proto/dwtools/abase/l6.test/.Path.test.s.swp
+          - ../proto/dwtools/abase/l6.test/Path.test.s
     submodule:
       wTools:
         path: 'npm:///wTools'
@@ -176,6 +173,10 @@ module:
         enabled: 0
       wPathBasic:
         path: 'npm:///wpathbasic'
+        autoExporting: 0
+        enabled: 0
+      wPathTools:
+        path: 'npm:///wpathtools'
         autoExporting: 0
         enabled: 0
       wPath:
@@ -705,24 +706,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          reflector: 'reflector::exported.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          reflector: 'reflector::exported.files.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -811,40 +794,26 @@ module:
           content: proto
           export: 1
     consistency:
-      wPath.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
       name: wPath
       org: noorg
       description: >-
-        Module that aggregates tools for managing paths. `wPath` leverages
-        parsing, joining, extracting, normalizing, nativizing, resolving
-        paths... Use the module to get uniform experience from playing with
-        paths on different platforms.
+        Tools to manipulate path. Aggregates modules PathBasic and PathTools.
+        Module Path leverages parsing, joining, extracting, normalizing,
+        nativizing, resolving paths... Use the module to get uniform experience
+        from playing with paths on different platforms.
       enabled: 1
       version: 0.4.0
-      interpreters:
-        - njs >= 8.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - wTools
-        - wPath
-        - path
-        - url
-        - uri
-        - path
-        - file
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@willbe.so>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@willbe.so>
+      contributors: *ref_4
       npm.name: wpath
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -920,7 +889,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/dwtools/abase/l4/Include.s
+        path: proto/dwtools/abase/l6/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -930,13 +899,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/abase/l4/Include.s'
+        path: '{path::out.*=1}/source/dwtools/abase/l6/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/abase/l4/Include.s'
+        path: '{path::out.*=1}/source/dwtools/abase/l6/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -956,6 +925,10 @@ module:
         enabled: 0
       wPathBasic:
         path: 'npm:///wpathbasic'
+        autoExporting: 0
+        enabled: 0
+      wPathTools:
+        path: 'npm:///wpathtools'
         autoExporting: 0
         enabled: 0
       wPath:
@@ -1511,9 +1484,8 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: 4db967bd98f9d4a3fcaf9cd7092b70bf
-        size: 1911
+        hash: 7f0a6fc08fb9f64deb9a7c885a32163c
+        size: 1936
       ../.im.will.yml:
-        hash: e25c281cd0d3880e162a565c803435a5
-        size: 4862
-      wPath.out.will.yml: *ref_0
+        hash: 9da05e1797fa1c39be988cfda99f9500
+        size: 4934

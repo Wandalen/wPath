@@ -3,7 +3,7 @@
 about :
 
   name : 'wPath'
-  description : 'Module that aggregates tools for managing paths. `wPath` leverages parsing, joining, extracting, normalizing, nativizing, resolving paths... Use the module to get uniform experience from playing with paths on different platforms.'
+  description : 'Tools to manipulate path. Aggregates modules PathBasic and PathTools. Module Path leverages parsing, joining, extracting, normalizing, nativizing, resolving paths... Use the module to get uniform experience from playing with paths on different platforms.'
   version : '0.4.0'
   enabled : 1
   interpreters :
