@@ -1522,6 +1522,4 @@ module:
       ../.im.will.yml:
         hash: ff8cf93cca1c3f41ae4d15c0a349599a
         size: 4928
-      wPath.out.will.yml:
-        hash: b5c4968749309180badda38b958fbc38
-        size: 38534
+      wPath.out.will.yml: *ref_0
