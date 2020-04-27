@@ -1,18 +1,18 @@
 {
-  "name" : "wpath", 
-  "version" : "0.3.28", 
-  "description" : "Tools to manipulate path. Aggregates modules PathBasic and PathTools. Module Path leverages parsing, joining, extracting, normalizing, nativizing, resolving paths... Use the module to get uniform experience from playing with paths on different platforms.", 
-  "author" : "Kostiantyn Wandalen <wanalen@willbe.so>", 
-  "license" : "MIT", 
-  "main" : "proto/dwtools/abase/l6/Path.s", 
-  "files" : [ "proto/dwtools/abase/l6/Path.s", "proto/dwtools/Tools.s" ], 
-  "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" }, 
-  "repository" : { "type" : "git", "url" : "https ://github.com/Wandalen/wPath.git" }, 
-  "bugs" : 
+  "name" : "wpath",
+  "version" : "0.3.29",
+  "description" : "Tools to manipulate path. Aggregates modules PathBasic and PathTools. Module Path leverages parsing, joining, extracting, normalizing, nativizing, resolving paths... Use the module to get uniform experience from playing with paths on different platforms.",
+  "author" : "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "license" : "MIT",
+  "main" : "proto/dwtools/abase/l6/Path.s",
+  "files" : [ "proto/dwtools/abase/l6/Path.s", "proto/dwtools/Tools.s" ],
+  "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" },
+  "repository" : { "type" : "git", "url" : "https ://github.com/Wandalen/wPath.git" },
+  "bugs" :
   {
     "url" : "https ://github.com/Wandalen/wPath/issues"
-  }, 
-  "dependencies" : { "wTools" : "alpha", "wpathbasic" : "alpha", "wpathtools" : "alpha" }, 
-  "devDependencies" : { "wTesting" : "alpha", "wpath" : "file:." }, 
+  },
+  "dependencies" : { "wTools" : "gamma", "wpathbasic" : "gamma", "wpathtools" : "gamma" },
+  "devDependencies" : { "wTesting" : "alpha", "wpath" : "file:." },
   "keywords" : [ "wTools", "wPath", "path", "url", "uri", "path", "file" ]
 }
