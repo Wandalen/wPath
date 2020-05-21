@@ -8,7 +8,7 @@
  * @module Tools/base/Path
 */
 
-if( typeof module !== 'undefined' && module !== null )
+if( typeof module !== 'undefined' )
 {
   let _ = require( '../../Tools.s' );
 
@@ -24,7 +24,7 @@ let Self = _global_.wTools;
 // export
 // --
 
-if( typeof module !== 'undefined' && module !== null )
+if( typeof module !== 'undefined' )
 module[ 'exports' ] = Self;
 
 })();
