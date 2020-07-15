@@ -6,6 +6,6 @@ Tools to manipulate path. Aggregates modules PathBasic and PathTools. Module Pat
 ## Try out
 ```
 npm install
-node sample/Sample.js
+node sample/Sample.s
 ```
 
