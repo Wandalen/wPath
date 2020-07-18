@@ -84,7 +84,7 @@ function routinesOfPathTools( test )
 let Self =
 {
 
-  name : 'Tools.base.l6.path',
+  name : 'Tools.l6.path',
   silencing : 1,
 
   tests :
