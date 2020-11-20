@@ -24,43 +24,43 @@ let _ = _global_.wTools;
 function routinesOfPathBasic( test )
 {
   test.case = 'namespace _.path';
-  test.is( _.routineIs( _.path.like ) );
-  test.is( _.routineIs( _.path.isElement ) );
-  test.is( _.routineIs( _.path.isSafe ) );
-  test.is( _.routineIs( _.path.isGlob ) );
-  test.is( _.routineIs( _.path.hasSymbolBase ) );
-  test.is( _.routineIs( _.path.prefixGet ) );
-  test.is( _.routineIs( _.path.name ) );
-  test.is( _.routineIs( _.path.fullName ) );
-  test.is( _.routineIs( _.path.ext ) );
-  test.is( _.routineIs( _.path.exts ) );
-  test.is( _.routineIs( _.path.withoutExt ) );
-  test.is( _.routineIs( _.path.changeExt ) );
-  test.is( _.routineIs( _.path.join ) );
-  test.is( _.routineIs( _.path.joinRaw ) );
-  test.is( _.routineIs( _.path.joinIfDefined ) );
-  test.is( _.routineIs( _.path.joinCross ) );
-  test.is( _.routineIs( _.path.reroot ) );
-  test.is( _.routineIs( _.path.resolve ) );
-  test.is( _.routineIs( _.path._split ) );
-  test.is( _.routineIs( _.path.split ) );
-  test.is( _.routineIs( _.path.current ) );
-  test.is( _.routineIs( _.path.from ) );
-  test.is( _.routineIs( _.path._relative ) );
-  test.is( _.routineIs( _.path.relative ) );
-  test.is( _.routineIs( _.path.relativeCommon ) );
-  test.is( _.routineIs( _.path._commonPair ) );
-  test.is( _.routineIs( _.path.common ) );
-  test.is( _.routineIs( _.path.rebase ) );
+  test.true( _.routineIs( _.path.like ) );
+  test.true( _.routineIs( _.path.isElement ) );
+  test.true( _.routineIs( _.path.isSafe ) );
+  test.true( _.routineIs( _.path.isGlob ) );
+  test.true( _.routineIs( _.path.hasSymbolBase ) );
+  test.true( _.routineIs( _.path.prefixGet ) );
+  test.true( _.routineIs( _.path.name ) );
+  test.true( _.routineIs( _.path.fullName ) );
+  test.true( _.routineIs( _.path.ext ) );
+  test.true( _.routineIs( _.path.exts ) );
+  test.true( _.routineIs( _.path.withoutExt ) );
+  test.true( _.routineIs( _.path.changeExt ) );
+  test.true( _.routineIs( _.path.join ) );
+  test.true( _.routineIs( _.path.joinRaw ) );
+  test.true( _.routineIs( _.path.joinIfDefined ) );
+  test.true( _.routineIs( _.path.joinCross ) );
+  test.true( _.routineIs( _.path.reroot ) );
+  test.true( _.routineIs( _.path.resolve ) );
+  test.true( _.routineIs( _.path._split ) );
+  test.true( _.routineIs( _.path.split ) );
+  test.true( _.routineIs( _.path.current ) );
+  test.true( _.routineIs( _.path.from ) );
+  test.true( _.routineIs( _.path._relative ) );
+  test.true( _.routineIs( _.path.relative ) );
+  test.true( _.routineIs( _.path.relativeCommon ) );
+  test.true( _.routineIs( _.path._commonPair ) );
+  test.true( _.routineIs( _.path.common ) );
+  test.true( _.routineIs( _.path.rebase ) );
 
   test.case = 'namespace _.path.s';
-  test.is( _.routineIs( _.path.s.are ) );
-  test.is( _.routineIs( _.path.s.areAbsolute ) );
-  test.is( _.routineIs( _.path.s.areRelative ) );
-  test.is( _.routineIs( _.path.s.areGlobal ) );
-  test.is( _.routineIs( _.path.s.areGlob ) );
-  test.is( _.routineIs( _.path.s.areRefined ) );
-  test.is( _.routineIs( _.path.s.areNormalized ) );
+  test.true( _.routineIs( _.path.s.are ) );
+  test.true( _.routineIs( _.path.s.areAbsolute ) );
+  test.true( _.routineIs( _.path.s.areRelative ) );
+  test.true( _.routineIs( _.path.s.areGlobal ) );
+  test.true( _.routineIs( _.path.s.areGlob ) );
+  test.true( _.routineIs( _.path.s.areRefined ) );
+  test.true( _.routineIs( _.path.s.areNormalized ) );
 }
 
 //
@@ -68,13 +68,13 @@ function routinesOfPathBasic( test )
 function routinesOfPathTools( test )
 {
   test.case = 'routines from PathTools.s';
-  test.is( _.routineIs( _.path.mapExtend ) );
-  test.is( _.routineIs( _.path.mapSupplement ) );
-  test.is( _.routineIs( _.path.mapAppend ) );
-  test.is( _.routineIs( _.path.mapPrepend ) );
-  test.is( _.routineIs( _.path.mapsPair ) );
-  test.is( _.routineIs( _.path.simplify ) );
-  test.is( _.routineIs( _.path.simplifyDst ) );
+  test.true( _.routineIs( _.path.mapExtend ) );
+  test.true( _.routineIs( _.path.mapSupplement ) );
+  test.true( _.routineIs( _.path.mapAppend ) );
+  test.true( _.routineIs( _.path.mapPrepend ) );
+  test.true( _.routineIs( _.path.mapsPair ) );
+  test.true( _.routineIs( _.path.simplify ) );
+  test.true( _.routineIs( _.path.simplifyDst ) );
 }
 
 // --
