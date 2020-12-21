@@ -1,4 +1,5 @@
-( function _Path_test_s_() {
+( function _Path_test_s_()
+{
 
 'use strict';
 

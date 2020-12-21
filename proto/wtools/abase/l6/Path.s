@@ -1,5 +1,6 @@
 //#! /usr/bin/env node
-(function _Path_s_(){
+(function _Path_s_()
+{
 
 'use strict';
 
