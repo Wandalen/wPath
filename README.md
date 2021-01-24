@@ -8,7 +8,7 @@ Tools to manipulate path. Aggregates modules PathBasic and PathTools. Module Pat
 git clone https://github.com/Wandalen/wPath
 cd wPath
 npm install
-node sample/Sample.s
+node sample/trivial/Sample.s
 ```
 
 ## To add to your project
