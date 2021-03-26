@@ -11,15 +11,15 @@
 
 if( typeof module !== 'undefined' )
 {
-  let _ = require( '../../Tools.s' );
+  const _ = require( '../../Tools.s' );
 
   _.include( 'wPathBasic' );
   _.include( 'wPathTools' );
 }
 
-let _global = _global_;
-let _ = _global_.wTools;
-let Self = _global_.wTools;
+const _global = _global_;
+const _ = _global_.wTools;
+const Self = _global_.wTools;
 
 // --
 // export
