@@ -1,13 +1,14 @@
 {
   "name": "wpath",
-  "version": "0.3.99",
+  "version": "0.3.100",
   "description": "Tools to manipulate path. Aggregates modules PathBasic and PathTools. Module Path leverages parsing, joining, extracting, normalizing, nativizing, resolving paths... Use the module to get uniform experience from playing with paths on different platforms.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
   "license": "MIT",
   "main": "proto/wtools/abase/l6/Path.s",
   "files": [
     "proto/wtools/abase/l6/Path.s",
-    "proto/wtools/Tools.s"
+    "proto/wtools/Tools.s",
+    "proto/node_modules"
   ],
   "scripts": {
     "test": "wtest .run 'proto/**' rapidity:-3",
@@ -27,8 +28,7 @@
   },
   "devDependencies": {
     "eslint": "7.1.0",
-    "wTesting": "alpha",
-    "wpath": "file:."
+    "wTesting": "alpha"
   },
   "keywords": [
     "wTools",
