@@ -1,6 +1,6 @@
 {
   "name" : "wpath",
-  "version" : "0.3.107",
+  "version" : "0.3.108",
   "description" : "Tools to manipulate path. Aggregates modules PathBasic and PathTools. Module Path leverages parsing, joining, extracting, normalizing, nativizing, resolving paths... Use the module to get uniform experience from playing with paths on different platforms.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
@@ -12,7 +12,7 @@
   {
     "url" : "https ://github.com/Wandalen/wPath/issues"
   },
-  "dependencies" : { "wTools" : "delta", "wpathbasic" : "delta", "wpathtools" : "delta" },
+  "dependencies" : { "wTools" : "gamma", "wpathbasic" : "gamma", "wpathtools" : "gamma" },
   "devDependencies" : { "wTesting" : "alpha", "eslint" : "7.1.0" },
   "keywords" : [ "wTools", "wPath", "path", "url", "uri", "path", "file" ]
 }
