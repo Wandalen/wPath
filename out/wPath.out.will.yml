@@ -2,12 +2,9 @@ format: outwillfile-2.0
 root:
   - wPath.out
 consistency:
-  ../.ex.will.yml: &ref_0
-    hash: 559b0ef6a85a2a8359e211bd81c20eda
-    size: 1937
-  ../.im.will.yml: &ref_1
-    hash: 85bd357b3afd10293eea67feeb3d5220
-    size: 5000
+  ../will.yml: &ref_0
+    hash: c7882e4b15f848b1fdc49753c4bc1641
+    size: 6708
 module:
   wPath.out:
     about:
@@ -20,24 +17,23 @@ module:
         from playing with paths on different platforms.
       enabled: 1
       version: 0.4.0
-      interpreters: &ref_2
-        - njs >= 10.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords: &ref_3
+      license: MIT
+      npm.name: wpath
+      author: Kostiantyn Wandalen <wanalen@01.school>
+      keywords: &ref_1
         - wTools
         - wPath
         - path
         - url
         - uri
-        - path
         - file
-      license: MIT
-      author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: &ref_4
+      contributors: &ref_2
         - Kostiantyn Wandalen <wanalen@01.school>
-      npm.name: wpath
-      npm.scripts: &ref_5
+      interpreters: &ref_3
+        - njs >= 10.0.0
+        - chrome >= 60.0.0
+        - firefox >= 60.0.0
+      npm.scripts: &ref_4
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -52,15 +48,11 @@ module:
       module.original.willfiles:
         criterion:
           predefined: 1
-        path:
-          - ../.ex.will.yml
-          - ../.im.will.yml
+        path: ../will.yml
       module.peer.willfiles:
         criterion:
           predefined: 1
-        path:
-          - ../.ex.will.yml
-          - ../.im.will.yml
+        path: ../will.yml
       module.peer.in:
         criterion:
           predefined: 1
@@ -177,11 +169,11 @@ module:
         path: 'npm:///wTools'
         autoExporting: 0
         enabled: 0
-      wPathBasic:
+      wpathbasic:
         path: 'npm:///wpathbasic'
         autoExporting: 0
         enabled: 0
-      wPathTools:
+      wpathtools:
         path: 'npm:///wpathtools'
         autoExporting: 0
         enabled: 0
@@ -798,8 +790,7 @@ module:
           content: proto
           export: 1
     consistency:
-      ../.ex.will.yml: *ref_0
-      ../.im.will.yml: *ref_1
+      ../will.yml: *ref_0
   ../:
     about:
       name: wPath
@@ -811,26 +802,22 @@ module:
         from playing with paths on different platforms.
       enabled: 1
       version: 0.4.0
-      interpreters: *ref_2
-      keywords: *ref_3
       license: MIT
-      author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: *ref_4
       npm.name: wpath
-      npm.scripts: *ref_5
+      author: Kostiantyn Wandalen <wanalen@01.school>
+      keywords: *ref_1
+      contributors: *ref_2
+      interpreters: *ref_3
+      npm.scripts: *ref_4
     path:
       module.willfiles:
         criterion:
           predefined: 1
-        path:
-          - .ex.will.yml
-          - .im.will.yml
+        path: will.yml
       module.original.willfiles:
         criterion:
           predefined: 1
-        path:
-          - .ex.will.yml
-          - .im.will.yml
+        path: will.yml
       module.peer.willfiles:
         criterion:
           predefined: 1
@@ -932,11 +919,11 @@ module:
         path: 'npm:///wTools'
         autoExporting: 0
         enabled: 0
-      wPathBasic:
+      wpathbasic:
         path: 'npm:///wpathbasic'
         autoExporting: 0
         enabled: 0
-      wPathTools:
+      wpathtools:
         path: 'npm:///wpathtools'
         autoExporting: 0
         enabled: 0
@@ -1489,9 +1476,6 @@ module:
           - 'build::release'
           - 'build::npm'
     consistency:
-      ../.ex.will.yml:
-        hash: 559b0ef6a85a2a8359e211bd81c20eda
-        size: 1937
-      ../.im.will.yml:
-        hash: 85bd357b3afd10293eea67feeb3d5220
-        size: 5000
+      ../will.yml:
+        hash: c7882e4b15f848b1fdc49753c4bc1641
+        size: 6708
