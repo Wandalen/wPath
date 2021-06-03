@@ -13,6 +13,6 @@
     "url" : "https ://github.com/Wandalen/wPath/issues"
   },
   "dependencies" : { "wTools" : "", "wpathbasic" : "", "wpathtools" : "" },
-  "devDependencies" : { "wTesting" : "alpha", "eslint" : "7.1.0" },
+  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0" },
   "keywords" : [ "wTools", "wPath", "path", "url", "uri", "path", "file" ]
 }
