@@ -3,8 +3,8 @@ root:
   - wPath.out
 consistency:
   ../will.yml: &ref_0
-    hash: 72127d4003b9c7bfc87b1e46e811e806
-    size: 6567
+    hash: 442f211e3a533e4493ecac7f505ea488
+    size: 6575
 module:
   wPath.out:
     about:
@@ -1459,5 +1459,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 72127d4003b9c7bfc87b1e46e811e806
-        size: 6567
+        hash: 442f211e3a533e4493ecac7f505ea488
+        size: 6575
